@@ -1,0 +1,128 @@
+.account{
+    background-color:white;
+    width: 900px;
+    border:2px solid #dadcdf;
+    padding: px;
+    margin-left: 350px;
+    padding: 25px;
+}
+#h1{
+    margin-top: -500px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: dimgrey;
+}
+#h2{
+    font-family:Arial, Helvetica, sans-serif;
+    color: dimgrey;
+}
+#g1{
+    margin-left: -5px;
+}
+.account img{
+    height: 70px;
+    width: 100px;
+}
+input{
+    height: 30px;width: 230px;
+    font-size: 15px;
+    border:2px solid #dadcdf;
+    border-radius: 3px;
+}
+input[type="mail"]{
+    width: 485px;
+}
+input[type="name1"]
+{
+    margin-left: 15px;
+}
+input[type="mail"]
+{
+    display: block;
+    margin-top: 30px;
+}
+input[type="pass"]
+{
+    display: inline;
+    margin-top: 20px;
+}
+input[type="confirm"]
+{
+    margin-left: 15px;
+}
+.p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    margin-top: -8px;
+    margin-left: 8px;
+}
+input.small{
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+.check{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: dimgray;
+    margin-top: -100px;
+    margin-left: 8px;
+    font-size: 18px;
+
+}
+.image{
+    margin-left: 600px;
+    margin-top: -100px;
+}
+.image img{
+    height: 400px;
+    width: 230px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.sign{
+    margin-top: 80px;
+}
+.sign .s a{
+    margin-left: -25px;
+    color: #1676f3;
+}
+.sign .s :hover{
+    color: blue;
+}
+.sign .n a{
+    margin-left: 280px;
+    text-decoration: none;
+    color: white;
+    background-color: #1676f3;
+    padding: 5px;
+    border-radius: 3px;
+    padding-left: 3px;
+}
+.sign ul{
+    list-style-type: none;
+}
+.sign ul li{
+    display: inline;
+}
+.sign .n a:hover{
+    background-color:blue;
+    color: white;
+}
+.i{
+    margin-left: 600px;
+}
+.i img{
+    height: 350px;
+    width: 250px;
+}

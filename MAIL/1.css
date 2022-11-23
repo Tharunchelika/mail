@@ -1,0 +1,61 @@
+.h{
+    list-style: none;
+    margin-left: 1300px;
+}
+li{
+    float: left;padding: 8px;
+}
+.h li a{
+    text-decoration: none;
+    color: #1676f3;
+}
+.h li a:hover{
+    color: red;
+}
+#ic{
+    width: 25px;
+}
+#google{
+    margin-left: 550px;
+    padding-top: 120px;
+    height: 130px;
+    height: 100px;
+}
+input{
+    height: 35px;width: 500px;
+    margin-left: 450px;   
+    margin-top: 15px;
+    font-size: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 3px 0px 0px #e5e5e5;
+}
+#mic{
+    margin-left: 920px;
+    margin-top: -30px;
+}
+button{
+    height: 38px;
+    width: 140px;
+    background-color: #f6f6f6;
+    font-size: 15px;
+    border-color: #e5e5e5;
+}
+button:hover{
+    background-color: #e5e5e5;
+}
+#lan{
+    list-style: none;
+    margin-left: 440px;
+    margin-top: 20px;
+    font-style:initial;
+}
+.l1{
+    font-size: 12px;
+    color: #167;
+}
+.l1 li a{
+    text-decoration: none;
+}
+.l1 li a:hover{
+    color: red;
+}

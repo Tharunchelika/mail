@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="icon" href="C:\Users\tharun chelika\Downloads\google.ico">
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="blank">
+        <div class="g">
+            <img style="height:80px ;width: 120px;" src="C:\Users\tharun chelika\Downloads\g1.png">
+            <h2 id="h2">Sign in</h2>
+            <h3 id="h3">to continue with Gmail</h3>
+            <input id="inp" style="height: 40px;width: 400px;margin-left: -150px;font-size: 20px;border-radius: 5px;border: 1px solid #dadcdf;" type="text" placeholder="Email or phone"  name="email" required>
+            <h3 style="margin-left: -150px;"> <a id="a1" href="#">Forgot email?</a></h3>
+            <h3 id="more">Not your computer? Use Guest mode to sign in privately<br><a id="a1" href="#">Learn more</a></h3>
+            
+            <div class="create">
+                <ul>
+                    <li><a href="#">Create account</a>
+                        <div class="sub">
+                            <ul>
+                                <li><a href="acc.html">For myself</a></li>
+                                <li><a href="#">For my child</a></li>
+                                <li><a href="#">To manage my business</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <div class="next">
+            <ul>
+                <li><a id="a" onclick="valid()" href="#">Next</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="div2">
+        <ul>
+            <li>
+                <label>English(united States)</label>
+                <select name="languages" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    
+
+                </select>
+            </li>
+            <li id="help"><a id="a4" href="#">Help</a></li>
+            <li id="privacy"><a id="a4" href="#">Privacy</a></li>
+            <li id="terms"><a id="a4" href="#">Terms</a></li>
+        </ul>
+    </div>
+    <script>
+        function valid(){
+            var text=document.getElementById("inp").value;
+            if(text!="" && text.includes("@")){
+                document.getElementById("a").href="mailto:"+text;
+            }
+            else{
+                alert("enter valid mail id");
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.phone{
+    background-color:white;
+    width: 570px;
+    border:2px solid #dadcdf;
+    margin-left: 450px;
+    padding-left: 50px;
+    height: 420px;
+    margin-top: 50px;
+}
+
+.g1{
+    margin-left: 200px;
+    height: 100px;
+    width: 150px;
+}
+h2{
+    margin-top: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#h1{
+    margin-top: -12px;
+}
+input{
+    height: 30px;width: 280px;
+    font-size: 20px;
+    border-radius: 3px;
+    
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    background-color:white;
+    color: #1676f3;
+    border-radius: 3px;
+}
+.back a:hover{
+    background-color: #1676f3;
+    color:white;
+}
+.back {
+    margin-top: 100px;
+}
+.next{
+    margin-left: 380px;
+    margin-top: -19px;
+}
+.next a:hover{
+    background-color: #1676f3;
+    color:white;
+}
+.verify{
+    margin-left: 380px;
+    margin-top: -19px;
+}
+.verify a:hover{
+    background-color: #1676f3;
+    color:white;
+}
