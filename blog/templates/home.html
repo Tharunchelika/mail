@@ -1,0 +1,40 @@
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="./static/images/blog.png">
+</head>
+<style>
+    body{
+        background-color:#ffffcc;
+        background-image:url("./static/images/blog.jpg");
+        background-repeat: no-repeat, repeat;
+        background-size:cover;
+    }
+    button{
+      background-color:white;
+      margin-left:23px;
+      padding:12px;
+      border-radius:10px;
+      font-size:20px;
+    }
+    button:hover{
+      background-color: #ffffcc;
+      color:black;
+    }
+
+</style>
+  <body>
+    <div class="container" align="center" style="margin-top:400px;background-color: #454545;width:500px;padding:50px;border-radius:20px;margin-left:570px">
+        
+        <form method="post">
+             {% csrf_token %}
+            <button style="margin-left:-10px"type="submit" name ="logintype" value="Student"  class="button">Student Login</button>
+            <button type="submit" name ="logintype" value="Lecturer" class="button">Lecturer Login</button>
+        </form>
+    </div>
+</body>
+</html>

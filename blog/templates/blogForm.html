@@ -1,0 +1,43 @@
+{%load static %}
+{% static "images" as baseUrl %}
+{% include 'navbar.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="./static/images/blog.png">
+</head>
+<style>
+  .blogimage{
+    height:200px;
+    width:600px;
+  }
+</style>
+<body>
+    {% block content %}
+      {% if logintype %}
+      
+        <div>
+          <a href="/create" ><button type="submit" class="btn btn-primary">Create Blog</button><a/>
+        </div>
+      {% endif %} 
+    {% endblock content %}
+    
+    {% for blog in blogs %}
+      <form method="post">
+        <div class="card mb-3">
+          <h5 class="card-title">{{blog.blogtitle}}</h5>
+          <img class="blogimage" src="{{blog.image.url}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{blog.title}}</h5>
+            <p class="card-text">{{blog.desc}}</p>
+          </div>
+        </div>
+      </form>
+    {% endfor %}
+
+</body>
+

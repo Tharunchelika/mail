@@ -1,0 +1,49 @@
+{% extends 'blogForm.html' %}
+{%load static %}
+{% include 'navbar.html' %}
+
+{% block content %}
+<style>
+    .container{
+        margin-top:30px;
+        border:1px solid black;
+        padding:40px;
+    }
+</style>
+
+<div class="container">
+
+    <form method="post" >
+        {% csrf_token %}
+        <div>
+            <select name="blogtitle" class="form-select-lg mb-3" aria-label="Default select example" required>
+                <option selected>Type of Blog</option>
+                <option value="Lectures">Lectures</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Photography">Photography</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Enter Title</label>
+            <input type="" name="title" class="form-control" id="" placeholder="Notes/favorite food/etc.." required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Title Image</label>
+            <input type="file" name="image" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" name="desc" id="exampleFormControlTextarea1" rows="6"></textarea required>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Can upload your Files</label>
+            <input type="file" name="files" class="form-control" >
+        </div>
+        <div>
+            <a href="/blogForm" ><button type="submit" class="btn btn-primary">submit</button><a/>
+        </div>
+    </form>
+</div>
+{% endblock content %}
